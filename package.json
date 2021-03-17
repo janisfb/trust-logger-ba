@@ -1,0 +1,17 @@
+{
+  "name": "trust-logger-ba",
+  "version": "1.0.1",
+  "description": "Node logger package",
+  "main": "./index.js",
+  "typings": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ip": "^1.1.5",
+    "kafkajs": "^1.15.0"
+  }
+}
