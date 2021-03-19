@@ -87,9 +87,7 @@ module.exports = class TrustLogger {
         reason: reason,
       };
 
-      (async() => {
-        await this.sendToKafka(logObj);
-      })
+      this.sendToKafka(logObj);
     });
   }
 
