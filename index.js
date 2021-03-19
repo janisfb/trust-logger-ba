@@ -87,7 +87,9 @@ module.exports = class TrustLogger {
         reason: reason,
       };
 
-      this.sendToKafka(logObj);
+      (async() => {
+        await this.sendToKafka(logObj);
+      })
     });
   }
 
@@ -96,7 +98,7 @@ module.exports = class TrustLogger {
    * 
    * @param {*} logObj 
    */
-  sendToKafka = async (logObj) => {
+  sendToKafka = async function(logObj) {
     await this.producer.connect();
 
     var expectedProps = ["time", "source_name", "source_ip", "user_name", "user_ip", 
