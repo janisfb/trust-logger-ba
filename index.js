@@ -97,13 +97,13 @@ module.exports = class TrustLogger {
    * @param {*} logObj 
    */
   sendToKafka = async (logObj) => {
+    await this.producer.connect();
+
     var expectedProps = ["time", "source_name", "source_ip", "user_name", "user_ip", 
       "session", "category", "priority", "status", "data_owner", "data_id", "data_name", "reason"];
     if (!expectedProps.every(function(x) { return x in logObj; })) {
       throw new Error(`[Logger] The structure of logObj was wrong!`);
     }
-
-    await this.producer.connect();
 
     var log = JSON.stringify(logObj);
 
