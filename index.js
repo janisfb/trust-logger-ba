@@ -65,7 +65,7 @@ module.exports = class TrustLogger {
       data.push({ owner: "-", id: "-" });
     }
 
-    if (data.length == 1) {
+    if (!Array.isArray(data)) {
       data = [data];
     }
 
