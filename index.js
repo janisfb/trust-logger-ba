@@ -65,6 +65,10 @@ module.exports = class TrustLogger {
       data.push({ owner: "-", id: "-" });
     }
 
+    if (data.length == 1) {
+      data = [data];
+    }
+
     var user = helpers.getUser(req);
     var session = helpers.getSessionId(req);
     var time = new Date().toISOString();
