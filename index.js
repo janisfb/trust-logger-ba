@@ -83,7 +83,7 @@ module.exports = class TrustLogger {
         user_ip: user.ip,
         session: session,
         category: category,
-        priority: dataObj.owner != user.name ? 4 : this.categories[category],
+        priority: ((dataObj.owner != "-") &&(dataObj.owner != user.name)) ? 4 : this.categories[category],
         status: success ? "success" : "failed",
         data_owner: dataObj.owner,
         data_id: dataObj.id,
