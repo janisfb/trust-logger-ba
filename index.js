@@ -29,6 +29,7 @@ module.exports = class TrustLogger {
       store: 1,
       change: 3,
       archive: 2,
+      view: 2,
       use: 3,
       share: 3,
       destroy: 2,
