@@ -1,6 +1,6 @@
 {
   "name": "trust-logger-ba",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Node logger package",
   "main": "./lib/logger.js",
   "typings": "index",
