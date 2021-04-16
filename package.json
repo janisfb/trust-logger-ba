@@ -2,7 +2,7 @@
   "name": "trust-logger-ba",
   "version": "0.1.7",
   "description": "Node logger package",
-  "main": "./index.js",
+  "main": "./lib/logger.js",
   "typings": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
