@@ -1,7 +1,7 @@
 const ip = require("ip");
 const { Kafka } = require("kafkajs");
 
-const helpers = require("./lib/helpers");
+const helpers = require("./helpers");
 
 /**
  * TrustLogger package
