@@ -46,7 +46,7 @@ const Logger = new TrustLogger({
         name: "kafkaTransport",
         meta: {
           kafkaBroker: "kafka:9092",
-          kafkaClientId: "data_management",
+          kafkaClientId: "data-management",
           logTopic: "logs",
         },
       },
@@ -55,7 +55,7 @@ const Logger = new TrustLogger({
         meta: {},
       },
     ],
-    source: "data_management"
+    source: "data-management"
   }
 );
 
@@ -124,7 +124,7 @@ transports: [
     name: "kafkaTransport",
     meta: {
       kafkaBroker: "kafka:9092",
-      kafkaClientId: "data_management",
+      kafkaClientId: "data-management",
       logTopic: "logs",
     },
   },
